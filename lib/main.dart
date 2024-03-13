@@ -1,8 +1,8 @@
-import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
+
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+// import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
@@ -39,9 +39,37 @@ class TodoApp extends StatefulWidget{
 
       TextEditingController dateController = TextEditingController();
 
-      
+      // bool doEdit = false;
+      void submit (bool doEdit, [TodoModelClass? todoModelClass]){
+        if(titleController.text.trim().isEmpty && descriptionController.text.trim().isNotEmpty&& dateController.text.trim().isNotEmpty){
+          if(!doEdit){
+            setState(() {
+              cardList.add(
+              TodoModelClass(
+                title: titleController.text.trim(),
+                description: descriptionController.text.trim(),
+                date: dateController.text.trim(),
+              )
+            );
+            });
+          } else{
+             setState(() {
+               todoModelClass!.title = titleController.text.trim();
+             todoModelClass.description = descriptionController.text.trim();
+             todoModelClass.date = dateController.text.trim();
+             });
+          }
+        }
+          
+          clearController();
+      }
 
-      void showBottomeSheet(){
+      void clearController(){
+        titleController.clear();
+        descriptionController.clear();
+        dateController.clear();
+      }
+      void showBottomeSheet(bool doEdit, [TodoModelClass ? todoModelClass]){
         showModalBottomSheet(
           isScrollControlled: true,
           context: context,
@@ -129,11 +157,17 @@ class TodoApp extends StatefulWidget{
                     style:const ButtonStyle(
                       backgroundColor: MaterialStatePropertyAll(Color.fromRGBO(2,167, 177, 1))
                     ),
-                    onPressed: (){}, child: const Text("Submit"))
+                    onPressed: (){
+                      if(!doEdit){
+                        submit(doEdit);
+                      } else{
+                        submit(doEdit, todoModelClass);
+                      }
+                      // submit(doEdit);
+                      Navigator.of(context).pop();
+                    }, child: const Text("Submit"))
                 ],
               ),
-            
-              
             );
           }
         );
@@ -142,7 +176,17 @@ class TodoApp extends StatefulWidget{
       List<TodoModelClass> cardList=[
           TodoModelClass(title: "Instagram", description: "Fixing the backend issue", date: "12,July 2015")
       ];
-
+      void deleteCard(TodoModelClass todoModelClass){
+            setState(() {
+              cardList.remove(todoModelClass);
+            });
+      }
+      void editCard(TodoModelClass todoModelClass){
+          titleController.text = todoModelClass.title;
+          descriptionController.text = todoModelClass.description;
+          dateController.text = todoModelClass.date;
+          showBottomeSheet(true,todoModelClass);
+      }
       @override
       Widget build(BuildContext context){
         return  Scaffold(
@@ -242,7 +286,9 @@ class TodoApp extends StatefulWidget{
                                 size: 20,
 
                               ),
-                              onTap: (){},
+                              onTap: (){
+                                editCard(cardList[index]);
+                              },
                               ),
                                GestureDetector(
                               child: const Icon(
@@ -250,7 +296,9 @@ class TodoApp extends StatefulWidget{
                                 color: Color.fromRGBO(0,139, 148, 1),
                                 size: 20,
                               ),
-                              onTap: (){},
+                              onTap: (){
+                                deleteCard(cardList[index]);
+                              },
                             )
                           ],
                         )
@@ -266,7 +314,7 @@ class TodoApp extends StatefulWidget{
 
           floatingActionButton: FloatingActionButton(
             onPressed: (){
-                showBottomeSheet();
+                showBottomeSheet(false);
             },
             backgroundColor: const Color.fromRGBO(2,167,177,1),
              child: const Text('Add'),
