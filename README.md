@@ -45,6 +45,10 @@ The Flutter Todo App is a simple and intuitive task management application built
    ```
 
 ## Usage
+![Screenshot_1710673349]()
+![Screenshot_1710673496]()
+
+![Screenshot_1710673402]()
 
 1. Launch the app on your device or emulator.
 2. Sign in using the following credentials:
@@ -53,11 +57,14 @@ The Flutter Todo App is a simple and intuitive task management application built
 3. Start managing your tasks effortlessly!
 
 ## Screenshots
-<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/11cd3332-06e1-43ea-ac4d-c9d84aefa2d8" width="200" height="400" />
-![Screenshot 2](images/screenshot2.png)
-![Screenshot 3](images/screenshot3.png)
-![Screenshot 4](images/screenshot4.png)
-![Screenshot 5](images/screenshot5.png)
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/11cd3332-06e1-43ea-ac4d-c9d84aefa2d8" width="300" height="500" />
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/95ad24ef-fed4-4d8b-ab63-2ff444b0feb0" width="300" height="500" />
+
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/0ace56a9-ea07-4222-a3d2-7dd0ef377f3f" width="300" height="500" />
+
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/63a4356d-ff6a-4cc9-88ca-042a95253832" width="300" height="500" />
+
+
 
 ## Contributing
 
