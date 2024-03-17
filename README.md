@@ -3,7 +3,7 @@ Certainly! Below is the complete Markdown code for the README file, including al
 ```markdown
 # Flutter Todo App
 
-![App Logo](images/app_logo.png)
+![App Logo](Assests/todo.jpeg)
 
 ## Overview
 
