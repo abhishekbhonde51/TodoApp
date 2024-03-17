@@ -57,12 +57,12 @@ The Flutter Todo App is a simple and intuitive task management application built
 3. Start managing your tasks effortlessly!
 
 ## Screenshots
-<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/11cd3332-06e1-43ea-ac4d-c9d84aefa2d8" width="300" height="500" />
-<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/95ad24ef-fed4-4d8b-ab63-2ff444b0feb0" width="300" height="500" />
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/11cd3332-06e1-43ea-ac4d-c9d84aefa2d8" width="300" height="600" />
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/95ad24ef-fed4-4d8b-ab63-2ff444b0feb0" width="300" height="600" />
 
-<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/0ace56a9-ea07-4222-a3d2-7dd0ef377f3f" width="300" height="500" />
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/0ace56a9-ea07-4222-a3d2-7dd0ef377f3f" width="300" height="600" />
 
-<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/63a4356d-ff6a-4cc9-88ca-042a95253832" width="300" height="500" />
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/63a4356d-ff6a-4cc9-88ca-042a95253832" width="300" height="600" />
 
 
 
