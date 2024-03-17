@@ -53,8 +53,7 @@ The Flutter Todo App is a simple and intuitive task management application built
 3. Start managing your tasks effortlessly!
 
 ## Screenshots
-
-![Screenshot_1710673341](https://github.com/abhishekbhonde51/TodoApp/assets/156674090/11cd3332-06e1-43ea-ac4d-c9d84aefa2d8 || width=200 height=400)
+<img src="https://github.com/abhishekbhonde51/TodoApp/assets/156674090/11cd3332-06e1-43ea-ac4d-c9d84aefa2d8" width="200" height="400" />
 ![Screenshot 2](images/screenshot2.png)
 ![Screenshot 3](images/screenshot3.png)
 ![Screenshot 4](images/screenshot4.png)
