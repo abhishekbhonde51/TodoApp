@@ -3,13 +3,9 @@ Certainly! Below is the complete Markdown code for the README file, including al
 ```markdown
 # Flutter Todo App
 
-![App Logo](Assests/todo.jpeg)
-
 ## Overview
 
 The Flutter Todo App is a simple and intuitive task management application built using Flutter. With this app, you can easily organize your tasks, add new ones, edit existing tasks, and delete completed tasks.
-
-![App Screenshots](images/app_screenshots.png)
 
 ## Features
 
@@ -18,10 +14,6 @@ The Flutter Todo App is a simple and intuitive task management application built
 - **Delete Task**: Remove completed tasks to keep your list clean.
 - **User Authentication**: Securely access your tasks with your account.
 - **Responsive Design**: Enjoy a seamless experience across devices.
-
-## Demo
-
-![Demo GIF](images/demo.gif)
 
 ## Installation
 
@@ -73,6 +65,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-Ensure you replace `yourusername` with your GitHub username and provide actual image files for `app_logo.png`, `app_screenshots.png`, `demo.gif`, and `screenshot1.png` to `screenshot5.png`. This Markdown code can be saved in a single file named `README.md` and used as the README for your Flutter Todo App project.
