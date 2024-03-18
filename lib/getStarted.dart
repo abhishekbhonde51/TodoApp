@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+// import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:todoapp/Login.dart';
 void main()=>runApp(const Start());
@@ -131,7 +131,7 @@ class _StarteState extends State{
                                   Center(child: Text("Get Started", style:GoogleFonts.quicksand(
                               fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white, 
                                                         )),),
-                              Center(child: Icon(Icons.forward, size: 40,color: Colors.white,)),
+                             const Center(child: Icon(Icons.forward, size: 40,color: Colors.white,)),
                                 ],
                               ),
                             )
