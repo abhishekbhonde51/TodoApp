@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:todoapp/TodoApp.dart';
@@ -58,7 +59,7 @@ class _LoginAppState extends State{
                         borderRadius: BorderRadius.all(Radius.circular(20))
                       ),
                       duration:const Duration(seconds: 3),
-                      backgroundColor:const Color.fromRGBO(89, 57, 241, 1),
+                      backgroundColor:const Color.fromARGB(255, 241, 57, 57),
                       content:   Center(child:  Text("Login Successful",style:GoogleFonts.quicksand(
                         fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white, 
                       )))),
@@ -67,12 +68,13 @@ class _LoginAppState extends State{
        }
         else{
                ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      shape: BeveledRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20))
+                     SnackBar(
+                      shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0),
                       ),
-                      backgroundColor: Color.fromRGBO(89, 57, 241, 1),
-                      content:  Center(child: Text("Enter correct email and password"))));
+                      elevation: 4.0,
+                      backgroundColor:const Color.fromRGBO(241, 57, 57, 1),
+                      content: const Center(child: Text("Enter correct email and password"))));
             }
     }
 
@@ -101,7 +103,7 @@ class _LoginAppState extends State{
                         child: Image.network('https://img.freepik.com/premium-photo/3d-cute-cartoon-girl-studying-education-illustration_988987-3325.jpg'),
                       ),
                       const SizedBox(height: 30,),
-                       Container(
+                       SizedBox(
                     // margin: const EdgeInsets.only(
                     //   left: 10,
                     //   right: 10
@@ -151,6 +153,7 @@ class _LoginAppState extends State{
                       decoration: const InputDecoration(
                         hintText: "Enter your email",
                         labelText: "Email",
+                        prefixIcon: Icon(Icons.email),
                         border:OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           borderSide: BorderSide(
@@ -185,6 +188,7 @@ class _LoginAppState extends State{
                         controller: _passController,
                         key: passKey,
                       decoration: const InputDecoration(
+                        prefixIcon: Icon(Icons.password),
                         hintText: "Enter your password",
                         labelText: "Password",
                         border:OutlineInputBorder(
